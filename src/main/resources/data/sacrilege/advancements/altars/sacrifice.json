@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "title": "Just Like the Aztecs",
+        "description": "Sacrifice an animal, mob, or player to your deity.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "sacrilege:altars/level2",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

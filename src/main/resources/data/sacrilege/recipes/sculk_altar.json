@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "csc",
+    "dld",
+    "rnr"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:candle"
+    },
+    "s": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "d": {
+      "item": "minecraft:polished_deepslate_wall"
+    },
+    "l": {
+      "item": "minecraft:lectern"
+    },
+    "r": {
+      "item": "minecraft:reinforced_deepslate"
+    },
+    "n": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:knowledge_book"
+  }
+}

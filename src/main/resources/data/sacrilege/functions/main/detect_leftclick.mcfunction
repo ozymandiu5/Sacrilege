@@ -1,0 +1,5 @@
+execute unless entity @s[tag=binded] if entity @s[tag=sculk] run function sacrilege:altar/destroy/unbinded/sculk
+execute if entity @s[tag=binded] if score @s sacri.altarUnbinding matches 2 as @a if score @s sacri.altarBinding = @e[tag=altar,limit=1,sort=nearest] sacri.altarBinding at @s run function sacrilege:altar/destroy/severence/3
+execute if entity @s[tag=binded] if score @s sacri.altarUnbinding matches 1 as @a if score @s sacri.altarBinding = @e[tag=altar,limit=1,sort=nearest] sacri.altarBinding at @s run function sacrilege:altar/destroy/severence/2
+execute if entity @s[tag=binded] if score @s sacri.altarUnbinding matches 0 as @a if score @s sacri.altarBinding = @e[tag=altar,limit=1,sort=nearest] sacri.altarBinding at @s run function sacrilege:altar/destroy/severence/1
+execute as @e[tag=altarClicks,limit=1,sort=nearest] run data remove entity @s attack

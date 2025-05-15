@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81514}"
+        },
+        "title": {
+            "bold": true,
+            "text": "Belly of the Beast"
+        },
+        "description": "Fall into the Void.",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "sacrilege:void/obtain",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

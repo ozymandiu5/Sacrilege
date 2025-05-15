@@ -1,0 +1,14 @@
+{
+    "sources": [
+        {
+            "type": "directory",
+            "source": "sigils",
+            "prefix": "sigils/"
+        },
+        {
+            "type": "directory",
+            "source": "blocks",
+            "prefix": "blocks/"
+        }
+    ]
+}

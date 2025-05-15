@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:nether_star",
+	"minecraft:totem_of_undying",
+	"minecraft:silence_armor_trim_smithing_template",
+	"minecraft:sculk_sensor",
+	"minecraft:sculk_shrieker",
+	"minecraft:calibrated_sculk_sensor",
+	"minecraft:amethyst_block",
+	"#forge:heads"
+  ]
+}

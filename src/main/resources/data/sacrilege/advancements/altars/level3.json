@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81514}"
+        },
+        "title": "Follower",
+        "description": "Level up your Altar to Tier 3.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "sacrilege:altars/level2",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

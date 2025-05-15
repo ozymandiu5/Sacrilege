@@ -1,0 +1,38 @@
+{
+    "howdoiproveit": {
+        "sounds": [
+            "sacrilege:howdoiproveit"
+        ],
+        "subtitle": "subtitles.howdoiproveit"
+    },
+    "devs.0zymandiu5": {
+        "sounds": [
+            "sacrilege:devs/0zymandiu5"
+        ],
+        "subtitle": "subtitles.devs.0zymandiu5"
+    },
+    "devs.existingeevee": {
+        "sounds": [
+            "sacrilege:devs/existingeevee"
+        ],
+        "subtitle": "subtitles.devs.existingeevee"
+    },
+    "devs.sweebow": {
+        "sounds": [
+            "sacrilege:devs/sweebow"
+        ],
+        "subtitle": "subtitles.devs.sweebow"
+    },
+    "devs.termineitron": {
+        "sounds": [
+            "sacrilege:devs/termineitron"
+        ],
+        "subtitle": "subtitles.devs.termineitron"
+    },
+    "devs.modrome": {
+        "sounds": [
+            "sacrilege:devs/modrome"
+        ],
+        "subtitle": "subtitles.devs.modrome"
+    }
+}

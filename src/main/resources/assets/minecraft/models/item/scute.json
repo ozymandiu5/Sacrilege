@@ -1,0 +1,44 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "item/scute"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 81510
+            },
+            "model": "sacrilege:sigils/end"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 81511
+            },
+            "model": "sacrilege:sigils/moon"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 81512
+            },
+            "model": "sacrilege:sigils/nether"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 81513
+            },
+            "model": "sacrilege:sigils/sculk"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 81514
+            },
+            "model": "sacrilege:sigils/colonthree"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 81515
+            },
+            "model": "sacrilege:sigils/sigilanim"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "credit": "hi",
+    "parent": "minecraft:item/template_spawn_egg",
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 81410
+            },
+            "model": "sacrilege:blocks/altar"
+        }
+    ]
+}

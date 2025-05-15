@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81510}"
+        },
+        "title": {
+            "color": "dark_purple",
+            "bold": true,
+            "text": "Cult of the End"
+        },
+        "description": "Devote yourself to The Ending Promise.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "sacrilege:altars/obtain",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

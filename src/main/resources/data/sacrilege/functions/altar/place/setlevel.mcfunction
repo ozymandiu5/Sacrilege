@@ -1,0 +1,10 @@
+execute if entity @s[tag=level1] run scoreboard players set @s sacri.altarLevel 1
+execute if entity @s[tag=level1] run tag @s remove level1
+execute if entity @s[tag=level2] run scoreboard players set @s sacri.altarLevel 2
+execute if entity @s[tag=level2] run tag @s remove level2
+execute if entity @s[tag=level3] run scoreboard players set @s sacri.altarLevel 3
+execute if entity @s[tag=level3] run tag @s remove level3
+execute if entity @s[tag=level4] run scoreboard players set @s sacri.altarLevel 4
+execute if entity @s[tag=level4] run tag @s remove level4
+execute if entity @s[tag=level5] run scoreboard players set @s sacri.altarLevel 5
+execute if entity @s[tag=level5] run tag @s remove level5

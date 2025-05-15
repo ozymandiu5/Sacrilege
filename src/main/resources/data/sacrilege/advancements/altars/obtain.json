@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "sacrilege:sculk_altar"
+        },
+        "title": "The Art of Worship",
+        "description": "Succesfully obtain any Altar.",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "sacrilege:root",
+	"criteria": {
+		"key0": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+					"items": [
+						"sacrilege:sculk_altar"
+						]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81514}"
+        },
+        "title": {
+			"color": "red",
+            "bold": true,
+            "text": "Tough Love"
+        },
+        "description": "Rebind with the same deity during a severance period.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "sacrilege:altars/severence/severence",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

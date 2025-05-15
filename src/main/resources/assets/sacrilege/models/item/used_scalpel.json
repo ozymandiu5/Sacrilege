@@ -1,0 +1,6 @@
+{
+    "parent": "sacrilege:item/scalpel",
+    "textures": {
+        "layer0": "sacrilege:item/used_scalpel"
+    }
+}

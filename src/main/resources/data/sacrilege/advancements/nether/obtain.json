@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81512}"
+        },
+        "title": {
+            "color": "dark_red",
+            "bold": true,
+            "text": "Cult of the Nether"
+        },
+        "description": "Devote yourself to The Blazing Harbinger.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "sacrilege:altars/obtain",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

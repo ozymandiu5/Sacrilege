@@ -1,0 +1,15 @@
+{
+	"item.sacrilege.scalpel": "Scalpel",
+	"item.sacrilege.blood_bottle": "Bottle o' Blood",
+	"item.sacrilege.echo_core": "Echo Core",
+	"item.sacrilege.sculk_rock": "Sculk Covered Rock",
+	"item.sacrilege.whispering_steel": "Whispering Steel",
+	"item.sacrilege.altar": "Altar",
+	"death.attack.blood_loss": "%1$s lost too much blood",
+	"subtitles.howdoiproveit": "HOW DO I PROVE IT!!! GHRAHHHH",
+    "subtitles.devs.0zymandiu5": "0zymandiu5 cries for help",
+    "subtitles.devs.existingeevee": "ExistingEevee cries for help",
+    "subtitles.devs.sweebow": "Sweebow cries for help",
+    "subtitles.devs.termineitron": "Termineitron cries for help",
+    "subtitles.devs.modrome": "Modrome cries for help"
+}

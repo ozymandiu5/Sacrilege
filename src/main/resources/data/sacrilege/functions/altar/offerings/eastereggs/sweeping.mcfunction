@@ -1,0 +1,2 @@
+execute if entity @s[tag=sculk] run tellraw @a [{"text":"<"},{"text":"THEALLSEEINGONE","color":"dark_aqua","bold":true,"obfuscated":true},{"text":"> ","obfuscated":false,"bold":false},{"text":"@Sweebow ","bold":true,"obfuscated":false},{"text":"sweeping","bold":false,"obfuscated":false}]
+advancement grant @p only sacrilege:altars/offering

@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "sacrilege:item/altar",
+		"particle": "sacrilege:item/altar"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 19, 13.375],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 3, 0]},
+			"faces": {
+				"north": {"uv": [1.375, 1.375, 2.875, 3.75], "texture": "#0"},
+				"east": {"uv": [0, 1.375, 1.375, 3.75], "texture": "#0"},
+				"south": {"uv": [4.25, 1.375, 5.75, 3.75], "texture": "#0"},
+				"west": {"uv": [2.875, 1.375, 4.25, 3.75], "texture": "#0"},
+				"up": {"uv": [2.875, 1.375, 1.375, 0], "texture": "#0"},
+				"down": {"uv": [4.375, 0, 2.875, 1.375], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.025, 19, 3],
+			"to": [13.975, 20, 13],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7.5, 18.5, 11]},
+			"faces": {
+				"north": {"uv": [6.25, 5, 7.625, 5.125], "texture": "#0"},
+				"east": {"uv": [5, 5, 6.25, 5.125], "texture": "#0"},
+				"south": {"uv": [8.875, 5, 10.25, 5.125], "texture": "#0"},
+				"west": {"uv": [7.625, 5, 8.875, 5.125], "texture": "#0"},
+				"up": {"uv": [7.625, 5, 6.25, 3.75], "texture": "#0"},
+				"down": {"uv": [9, 3.75, 7.625, 5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.05, 14.5, 3.175],
+			"to": [13.95, 19.5, 12.75],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 19, 10.75]},
+			"faces": {
+				"north": {"uv": [1.125, 4.875, 2.5, 5.5], "texture": "#0"},
+				"east": {"uv": [0, 4.875, 1.125, 5.5], "texture": "#0"},
+				"south": {"uv": [3.625, 4.875, 5, 5.5], "texture": "#0"},
+				"west": {"uv": [2.5, 4.875, 3.625, 5.5], "texture": "#0"},
+				"up": {"uv": [2.5, 4.875, 1.125, 3.75], "texture": "#0"},
+				"down": {"uv": [3.875, 3.75, 2.5, 4.875], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [70, -135, 0],
+			"translation": [0, 2.3, -0.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [70, -135, 0],
+			"translation": [0, 2.3, -0.75],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [0, -1.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0, -15.25, 0],
+			"scale": [2, 2, 2]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"overrides": [
+		{"predicate": {"sacrilege:altar_type": 1}, "model": "sacrilege:item/sculk_altar"}
+	]
+}

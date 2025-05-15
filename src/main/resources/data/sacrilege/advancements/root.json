@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81515}"
+        },
+        "title": "Sacrilege",
+        "description": "There's no going back.",
+        "frame": "challenge",
+        "background": "minecraft:textures/block/deepslate_tiles.png",
+        "show_toast": true,
+        "announce_to_chat": false
+    },
+	"criteria": {
+	"key0": {
+		"trigger": "minecraft:location",
+		"conditions": {
+			"player": {
+			"location": {
+            "structure": "minecraft:ancient_city"
+          }
+        }
+      }
+    }
+  }
+}

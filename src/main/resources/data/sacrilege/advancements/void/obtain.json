@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute",
+            "nbt": "{CustomModelData:81514}"
+        },
+        "title": {
+            "color": "black",
+            "bold": true,
+            "text": "Voices of the Void"
+        },
+        "description": "Create a Void Altar.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "sacrilege:altars/obtain",
+    "criteria": {
+        "key0": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+recipe take @s sacrilege:sculk_altar
+advancement revoke @s only sacrilege:sculk_altar
+give @s polar_bear_spawn_egg{CustomModelData:81410,EntityTag:{id:armor_stand,ShowArms:1b,Marker:1b,Small:1b,DisabledSlots:1052688,NoAI:1b,Silent:1b,Tags:["altar","sculk","level1"],ArmorItems:[{},{},{},{id:polar_bear_spawn_egg,tag:{CustomModelData:81410},Count:1}],ArmorDropChances:[0f,0f,0f,0f]},display:{Name:'[{"text":"Altar","italic":false,"color":"yellow"}]',Lore:['["",{"text":"Worships the deity of the ","italic":false,"color":"white"},{"text":"Sculk","italic":false,"color":"dark_aqua","bold":true}]']}}
+clear @s minecraft:knowledge_book

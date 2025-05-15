@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "bdb",
+    "bdb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:bone_block"
+    },
+    "d": {
+      "item": "minecraft:deepslate"
+    },
+    "c": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  },
+  "result": {
+    "item": "minecraft:reinforced_deepslate"
+  }
+}

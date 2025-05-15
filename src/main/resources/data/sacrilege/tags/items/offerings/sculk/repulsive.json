@@ -1,0 +1,19 @@
+{
+  "values": [
+	"#minecraft:wool",
+	"minecraft:iron_sword",
+	"minecraft:iron_pickaxe",
+	"minecraft:iron_axe",
+	"minecraft:iron_shovel",
+	"minecraft:iron_hoe",
+	"minecraft:iron_helmet",
+	"minecraft:iron_chestplate",
+	"minecraft:iron_leggings",
+	"minecraft:iron_boots",
+	"minecraft:netherite_upgrade_smithing_template",
+	"minecraft:netherite_scrap",
+	"minecraft:netherrack",
+	"minecraft:end_stone",
+	"minecraft:cracked_nether_bricks"
+  ]
+}

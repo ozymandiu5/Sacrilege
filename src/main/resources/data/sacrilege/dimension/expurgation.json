@@ -1,0 +1,11 @@
+{
+    "type": "sacrilege:expurgation",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "sacrilege:expurgation",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "sacrilege:expurgation"
+        }
+    }
+}
