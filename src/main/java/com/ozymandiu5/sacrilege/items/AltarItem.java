@@ -41,14 +41,14 @@ public class AltarItem extends Item {
 					(stack, world, player, seed) -> getAltarType(stack));
 	   }
 	   
-		public static Float getAltarType(ItemStack stack) {
+		public static int getAltarType(ItemStack stack) {
 			if (stack.hasTag()) {
-				return stack.getTag().getFloat(TAG_ALTARTYPE);
+				return stack.getTag().getInt(TAG_ALTARTYPE);
 			}
-			return null;
+			return 0;
 		}
 
-		public static void setAltarType(ItemStack stack, Float altarType) {
+		public static void setAltarType(ItemStack stack, int altarType) {
 			stack.getOrCreateTag().putFloat(TAG_ALTARTYPE, altarType);
 		}
 		
@@ -73,7 +73,7 @@ public class AltarItem extends Item {
 		               }
 		               CompoundTag compound = new CompoundTag();
 		               compound.putBoolean("Small", true);
-		               //compound.putBoolean("Marker", true);
+		               compound.putBoolean("NoGravity", true);
 		               compound.putBoolean("Invisible", true);
 		               compound.putInt("DisabledSlots", 1052688);
 		               armorstand.readAdditionalSaveData(compound);
