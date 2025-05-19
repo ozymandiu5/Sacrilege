@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sacrilege:item/sculk_covered_iron_helmet"
+  }
+}

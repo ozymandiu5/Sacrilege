@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w",
+    "w",
+    "b"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "w": {
+      "item": "sacrilege:whispering_steel"
+    }
+  },
+  "result": {
+    "item": "sacrilege:whispering_steel_sword"
+  }
+}

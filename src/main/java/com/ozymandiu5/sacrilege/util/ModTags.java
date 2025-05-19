@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
 	public static class Blocks{
 		public static final TagKey<Block> NEEDS_WHISPERING_STEEL_TOOL = tag("needs_whispering_steel_tool");
+		public static final TagKey<Block> NEEDS_SCULK_COVERED_IRON_TOOL = tag("needs_sculk_covered_iron_tool");
 		
 		private static TagKey<Block> tag(String name){
 			return BlockTags.create(new ResourceLocation(Sacrilege.MODID, name));

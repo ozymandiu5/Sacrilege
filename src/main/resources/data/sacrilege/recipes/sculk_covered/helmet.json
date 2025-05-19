@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sis",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:sculk_vein"
+    },
+    "i": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "result": {
+    "item": "sacrilege:sculk_covered_iron_helmet"
+  }
+}

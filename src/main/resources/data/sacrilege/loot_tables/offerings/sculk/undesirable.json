@@ -1,67 +1,113 @@
 {
-    "type": "minecraft:generic",
-    "pools": [
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
         {
-            "rolls": 1,
-            "bonus_rolls": 0,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:diamond"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:emerald"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:netherite_scrap"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:vex_armor_trim_smithing_template"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_sword"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_pickaxe"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_axe"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_shovel"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_hoe"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_helmet"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_chestplate"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_helmet"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:iron_boots"
-                },
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:netherite_upgrade_smithing_template"
-				}
-            ]
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:vex_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_hoe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 execute as @a store result score @s sacri.YPos run data get entity @s Pos[1]
 execute as @a in minecraft:overworld unless entity @s[tag=expurgated] if score @s sacri.YPos matches ..-128 run function sacrilege:main/void_death
 execute as @e[tag=expurgated] at @s run function sacrilege:main/expurgation
-execute in sacrilege:expurgation run kill @e[type=minecraft:experience_orb]
+execute in sacrilege:expurgation run kill @e[type=minecraft:experience_orb,distance=0..]
 
 execute as @e[tag=altarClicks] at @s if data entity @s attack as @e[tag=altar,limit=1,sort=nearest] at @s run function sacrilege:main/detect_leftclick
 

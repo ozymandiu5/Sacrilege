@@ -1,4 +1,13 @@
-// 1.20.1	2025-05-17T21:19:26.7464888	Item Models: sacrilege
+// 1.20.1	2025-05-18T20:02:22.3508161	Item Models: sacrilege
+13e8dd882a4a117be80737154b1090561b5c8f07 assets/sacrilege/models/item/sculk_covered_iron_axe.json
+4234c3351f1a777f11144aa56fcc958140f14af2 assets/sacrilege/models/item/sculk_covered_iron_boots.json
+01b870fc629e40e4fa88c95a5340ab711cc2e52a assets/sacrilege/models/item/sculk_covered_iron_chestplate.json
+89657a1e8881c1caddc3e49956a3d7a85f1fa944 assets/sacrilege/models/item/sculk_covered_iron_helmet.json
+cf7e3c1d44b6df3e9a8a0ab015b596794581fe40 assets/sacrilege/models/item/sculk_covered_iron_hoe.json
+3dea6873e7a43b0a16329a836c16e715aca2beef assets/sacrilege/models/item/sculk_covered_iron_leggings.json
+1a6f69fde067cedda23668ea80d61ed6deb2754c assets/sacrilege/models/item/sculk_covered_iron_pickaxe.json
+7c33ee18d3c30086e1b9538db3659aa92e713ec2 assets/sacrilege/models/item/sculk_covered_iron_shovel.json
+2dff7d8091858118439d50d4bc14103370eb0f7f assets/sacrilege/models/item/sculk_covered_iron_sword.json
 291da75a0669d16da268b9c445c1c046aa905348 assets/sacrilege/models/item/whispering_steel_axe.json
 4f383ad59bc021a7154e5f1d2a67f6d21a97a23d assets/sacrilege/models/item/whispering_steel_boots.json
 b1764f7d8d06f8f84e6e85cbd6e21ae5ead70c9f assets/sacrilege/models/item/whispering_steel_boots_amethyst_trim.json

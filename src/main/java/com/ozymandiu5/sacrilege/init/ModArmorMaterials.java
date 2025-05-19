@@ -8,10 +8,14 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-	WHISPERING_STEEL("whispering_steel", 26, new int[] {5, 7, 5, 4}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.of(ItemInit.WHISPERING_STEEL.get()));
+	
+	WHISPERING_STEEL("whispering_steel", 40, new int[] {5, 7, 5, 4}, 30, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.of(ItemInit.WHISPERING_STEEL.get())),
+	
+	SCULK_COVERED_IRON("sculk_covered_iron", 8, new int[] {2, 6, 3, 2}, 25, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(Items.IRON_INGOT));
 
 	private final String name;
 	private final int durabilityMultiplier;

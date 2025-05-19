@@ -44,10 +44,21 @@ public class ModItemModelProvider extends ItemModelProvider{
         handheldItem(ItemInit.WHISPERING_STEEL_SHOVEL);
         handheldItem(ItemInit.WHISPERING_STEEL_HOE);
         
+        handheldItem(ItemInit.SCULK_COVERED_IRON_SWORD);
+        handheldItem(ItemInit.SCULK_COVERED_IRON_PICKAXE);
+        handheldItem(ItemInit.SCULK_COVERED_IRON_AXE);
+        handheldItem(ItemInit.SCULK_COVERED_IRON_SHOVEL);
+        handheldItem(ItemInit.SCULK_COVERED_IRON_HOE);
+        
         trimmedArmorItem(ItemInit.WHISPERING_STEEL_HELMET);
         trimmedArmorItem(ItemInit.WHISPERING_STEEL_CHESTPLATE);
         trimmedArmorItem(ItemInit.WHISPERING_STEEL_LEGGINGS);
         trimmedArmorItem(ItemInit.WHISPERING_STEEL_BOOTS);
+        
+        generatedItem(ItemInit.SCULK_COVERED_IRON_HELMET);
+        generatedItem(ItemInit.SCULK_COVERED_IRON_CHESTPLATE);
+        generatedItem(ItemInit.SCULK_COVERED_IRON_LEGGINGS);
+        generatedItem(ItemInit.SCULK_COVERED_IRON_BOOTS);
     }
     
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -99,6 +110,12 @@ public class ModItemModelProvider extends ItemModelProvider{
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(Sacrilege.MODID,"item/" + item.getId().getPath()));
+    }
+    
+    private ItemModelBuilder generatedItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Sacrilege.MODID,"item/" + item.getId().getPath()));
     }
 }

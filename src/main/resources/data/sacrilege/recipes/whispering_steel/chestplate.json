@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w w",
+    "wew",
+	"wew"
+  ],
+  "key": {
+    "e": {
+      "item": "sacrilege:echo_core"
+    },
+    "w": {
+      "item": "sacrilege:whispering_steel"
+    }
+  },
+  "result": {
+    "item": "sacrilege:whispering_steel_chestplate"
+  }
+}
