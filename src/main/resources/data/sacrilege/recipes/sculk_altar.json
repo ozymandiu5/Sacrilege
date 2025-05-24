@@ -26,6 +26,7 @@
     }
   },
   "result": {
-    "item": "minecraft:knowledge_book"
+    "item": "minecraft:knowledge_book",
+	"count": 1
   }
 }
