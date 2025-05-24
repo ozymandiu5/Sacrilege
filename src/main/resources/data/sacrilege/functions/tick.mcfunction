@@ -1,4 +1,5 @@
 execute as @a store result score @s sacri.YPos run data get entity @s Pos[1]
+execute as @a store result score @s sacri.altarCultAdd run data get entity @s UUID[0]
 execute as @a in minecraft:overworld unless entity @s[tag=expurgated] if score @s sacri.YPos matches ..-128 run function sacrilege:main/void_death
 execute as @e[tag=expurgated] at @s run function sacrilege:main/expurgation
 execute in sacrilege:expurgation run kill @e[type=minecraft:experience_orb,distance=0..]
@@ -22,7 +23,6 @@ execute as @e[tag=altarDisplay] at @s run function sacrilege:main/altarcircle_le
 execute as @e[tag=altar] at @s if score @s sacri.altarVerdictTimer matches 6 run function sacrilege:altar/offerings/detect/realize
 execute as @e[tag=altar] at @s if score @s sacri.altarVerdictTimer matches 0 run function sacrilege:altar/offerings/detect/verdict
 execute as @a at @s if score @s sacri.eastereggs.howdoiproveit matches 6.. run function sacrilege:altar/offerings/eastereggs.howdoiproveit/2
-execute as @a store result score @s sacri.altarBinding run data get entity @s UUID[0]
 execute as @e[tag=altar] if score @s sacri.altarUnbindingTimer matches 0 run scoreboard players set @s sacri.altarUnbinding 0
 
 execute as @e[tag=reality] at @s if score @s sacri.altarLivingTimer matches 1.. run function sacrilege:main/realitytick

@@ -1,16 +1,15 @@
 {
     "display": {
         "icon": {
-            "item": "sacrilege:altar",
-			"nbt": "{altarType:1}"
+            "item": "sacrilege:riftcaller"
         },
-        "title": "The Art of Worship",
-        "description": "Succesfully obtain any Altar.",
+        "title": "The King of Kings",
+        "description": "Obtain the Riftcaller.",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true
     },
-    "parent": "sacrilege:root",
+    "parent": "sacrilege:altars/offering",
 	"criteria": {
 		"key0": {
 			"trigger": "minecraft:inventory_changed",
@@ -18,7 +17,7 @@
 				"items": [
 					{
 					"items": [
-						"sacrilege:altar"
+						"sacrilege:riftcaller"
 						]
 					}
 				]

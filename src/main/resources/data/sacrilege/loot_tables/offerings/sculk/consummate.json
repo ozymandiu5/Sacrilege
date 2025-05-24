@@ -72,6 +72,10 @@
         {
           "type": "minecraft:item",
           "name": "sacrilege:whispering_steel_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sacrilege:riftcaller"
         }
       ]
     }

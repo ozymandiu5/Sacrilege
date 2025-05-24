@@ -1,0 +1,2 @@
+execute as @a if score @s sacri.altarCultAdd = @e[tag=altar,limit=1,sort=nearest] sacri.altarCultAdd store result score @s sacri.altarBinding run data get entity @e[tag=altar,limit=1,sort=nearest] UUID[0]
+execute as @a if score @s sacri.altarBinding = @e[tag=altar,limit=1,sort=nearest] sacri.altarBinding run advancement grant @s only sacrilege:altars/cult

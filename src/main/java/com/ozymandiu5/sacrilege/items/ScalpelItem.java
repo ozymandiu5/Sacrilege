@@ -64,9 +64,11 @@ public class ScalpelItem extends Item {
 			ItemStack bottle = player.getItemInHand(opposite);
 			bottle.setCount(bottle.getCount() - 1);
 			ItemStack blood = new ItemStack(ItemInit.BLOOD_BOTTLE.get());
-
+			
+			BloodBottleItem.setPlayerUUID(blood, player.getUUID());
+			
 			player.addItem(blood);
-
+			
 			DamageSource bloodLoss = new DamageSourceInit(player.level().registryAccess()).bloodLoss();
 			player.hurt(bloodLoss, 4);
 		}

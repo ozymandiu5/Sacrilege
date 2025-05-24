@@ -49,7 +49,7 @@ public class AltarItem extends Item {
 		}
 
 		public static void setAltarType(ItemStack stack, int altarType) {
-			stack.getOrCreateTag().putFloat(TAG_ALTARTYPE, altarType);
+			stack.getOrCreateTag().putInt(TAG_ALTARTYPE, altarType);
 		}
 		
 	   public InteractionResult useOn(UseOnContext p_40510_) {

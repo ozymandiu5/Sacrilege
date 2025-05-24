@@ -14,6 +14,8 @@ execute if entity @s[tag=Modrome] run function sacrilege:altar/offerings/eastere
 execute if entity @s[tag=Modrome] run tag @s remove Modrome
 execute if entity @s[tag=fartar] as @p at @s run function sacrilege:altar/offerings/eastereggs/altar
 execute if entity @s[tag=fartar] run tag @s remove fartar
+execute if entity @s[tag=cult] at @s run function sacrilege:altar/offerings/cults/add
+execute if entity @s[tag=cult] run tag @s remove cult
 
 execute if entity @s[tag=repulsive] run function sacrilege:altar/offerings/sculk/repulsive
 execute if entity @s[tag=repulsive] run tag @s remove repulsive

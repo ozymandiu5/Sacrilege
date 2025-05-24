@@ -5,6 +5,7 @@ import com.ozymandiu5.sacrilege.items.BloodBottleItem;
 import com.ozymandiu5.sacrilege.items.ScalpelItem;
 import com.ozymandiu5.sacrilege.items.SculkRockItem;
 import com.ozymandiu5.sacrilege.items.AltarItem;
+import com.ozymandiu5.sacrilege.items.RiftcallerItem;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -17,6 +18,7 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Sacrilege.MODID);
@@ -54,6 +56,10 @@ public class ItemInit {
 			-> new ShovelItem(ModToolTiers.WHISPERING_STEEL, 1, -3, new Item.Properties()));
 	public static final RegistryObject<Item> WHISPERING_STEEL_HOE = ITEMS.register("whispering_steel_hoe", () 
 			-> new HoeItem(ModToolTiers.WHISPERING_STEEL, -4, 0, new Item.Properties()));
+	
+	public static final RegistryObject<Item> RIFTCALLER = ITEMS.register("riftcaller", () 
+			-> new RiftcallerItem(ModToolTiers.WHISPERING_STEEL, 10, -1, new Item.Properties()
+					.rarity(Rarity.EPIC)));
 	
 	public static final RegistryObject<Item> WHISPERING_STEEL_HELMET = ITEMS.register("whispering_steel_helmet", () 
 			-> new ArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.HELMET, new Item.Properties()));
