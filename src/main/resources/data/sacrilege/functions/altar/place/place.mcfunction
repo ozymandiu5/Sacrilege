@@ -1,3 +1,5 @@
+data modify entity @s NoGravity set value 1b
+
 function sacrilege:altar/place/setlevel
 
 execute at @s run setblock ~ ~ ~ minecraft:polished_deepslate_wall

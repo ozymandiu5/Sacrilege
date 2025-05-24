@@ -42,7 +42,7 @@ public class RiftcallerItem extends SwordItem{
 				player.forceAddEffect(new MobEffectInstance(MobEffects.INVISIBILITY, -1, 0, false, false), player);
 				player.forceAddEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, -1, 4, false, false), player);
 				player.forceAddEffect(new MobEffectInstance(MobEffects.WEAKNESS, -1, 50, false, false), player);
-				player.forceAddEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, -1, 50, false, false), player);
+				player.forceAddEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, -1, 2, false, false), player);
 				player.forceAddEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, -1, 50, false, false), player);
 				player.forceAddEffect(new MobEffectInstance(MobEffects.DARKNESS, -1, 0, false, false), player);
 				currentlyInbetween = true;
