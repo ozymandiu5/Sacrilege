@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "eee",
-    "ede",
-    "eee"
+    "sss",
+    "sds",
+	"sss"
   ],
   "key": {
-    "e": {
-      "item": "minecraft:echo_shard"
+    "s": {
+      "item": "minecraft:sculk_vein"
     },
     "d": {
       "item": "minecraft:diamond"
