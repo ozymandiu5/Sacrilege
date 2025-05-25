@@ -22,7 +22,7 @@ execute as @e[tag=altar] run data modify entity @s Rotation[1] set value 0
 execute as @e[tag=altarDisplay] at @s run function sacrilege:main/altarcircle_leveling
 execute as @e[tag=altar] at @s if score @s sacri.altarVerdictTimer matches 6 run function sacrilege:altar/offerings/detect/realize
 execute as @e[tag=altar] at @s if score @s sacri.altarVerdictTimer matches 0 run function sacrilege:altar/offerings/detect/verdict
-execute as @a at @s if score @s sacri.eastereggs.howdoiproveit matches 6.. run function sacrilege:altar/offerings/eastereggs.howdoiproveit/2
+execute as @a at @s if score @s sacri.eastereggs.howdoiproveit matches 6.. run function sacrilege:altar/offerings/eastereggs/howdoiproveit/2
 execute as @e[tag=altar] if score @s sacri.altarUnbindingTimer matches 0 run scoreboard players set @s sacri.altarUnbinding 0
 
 execute as @e[tag=reality] at @s if score @s sacri.altarLivingTimer matches 1.. run function sacrilege:main/realitytick

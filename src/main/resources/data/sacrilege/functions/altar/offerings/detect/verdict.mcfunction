@@ -1,4 +1,4 @@
-execute if entity @s[tag=howdoiproveit] as @p at @s run function sacrilege:altar/offerings/sacri.eastereggs.howdoiproveit/1
+execute if entity @s[tag=howdoiproveit] as @p at @s run function sacrilege:altar/offerings/eastereggs/howdoiproveit/1
 execute if entity @s[tag=howdoiproveit] run tag @s remove howdoiproveit
 execute if entity @s[tag=sweeping] run function sacrilege:altar/offerings/eastereggs/sweeping
 execute if entity @s[tag=sweeping] run tag @s remove sweeping
