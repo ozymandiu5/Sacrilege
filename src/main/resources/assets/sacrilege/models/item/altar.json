@@ -85,6 +85,6 @@
 		}
 	},
 	"overrides": [
-		{"predicate": {"altar_type": 1}, "model": "sacrilege:item/sculk_altar"}
+		{"predicate": {"sacrilege:altar_type": 1}, "model": "sacrilege:item/sculk_altar"}
 	]
 }

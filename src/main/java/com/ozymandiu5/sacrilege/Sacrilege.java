@@ -5,10 +5,14 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.ozymandiu5.sacrilege.entity.ModEntities;
 import com.ozymandiu5.sacrilege.init.ItemInit;
+import com.ozymandiu5.sacrilege.items.AltarItem;
+import com.ozymandiu5.sacrilege.items.ScalpelItem;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -50,6 +54,14 @@ public class Sacrilege {
 		public static void onClientSetup(FMLClientSetupEvent event) {
 			EntityRenderers.register(ModEntities.SCULK_ROCK_PROJECTILE.get(), ThrownItemRenderer::new);
 			LOGGER.info("have fun " + Minecraft.getInstance().getUser().getName() + "!! :3");
+			
+			ItemProperties.register(ItemInit.SCALPEL.get(), new ResourceLocation(MODID, "is_used"),
+					(stack, world, player, seed) -> {
+						return ScalpelItem.isUsed(stack) ? 1 : 0;
+			});
+			
+			ItemProperties.register(ItemInit.ALTAR.get(), new ResourceLocation(MODID, "altar_type"),
+					(stack, world, player, seed) -> AltarItem.getAltarType(stack));
 		}
 	}
 }

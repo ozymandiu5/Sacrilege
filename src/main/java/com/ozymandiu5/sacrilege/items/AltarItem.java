@@ -25,7 +25,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
-public class AltarItem extends Item {
+public class AltarItem extends Item { 
 
 	public AltarItem(Item.Properties properties) {
 		super(properties);
@@ -34,7 +34,7 @@ public class AltarItem extends Item {
 	public static int getAltarType(ItemStack stack) {
 		CompoundTag nbt = stack.getOrCreateTag();
 		try {
-			return (int) nbt.getFloat("altar_type");
+			return nbt.getInt("altar_type");
 		} catch (IllegalArgumentException err) {
 			return 0;
 		}
@@ -42,7 +42,7 @@ public class AltarItem extends Item {
 
 	public static void setAltarType(ItemStack stack, int altarType) {
 		CompoundTag nbt = stack.getOrCreateTag();
-		nbt.putFloat("altar_type", altarType);
+		nbt.putInt("altar_type", altarType);
 	}
 
 	public InteractionResult useOn(UseOnContext p_40510_) {

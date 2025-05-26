@@ -27,7 +27,7 @@
     },
 	"overrides":[{
 		"predicate":{
-			"is_used": 1
+			"sacrilege:is_used": 1
 		},
 		"model": "sacrilege:item/used_scalpel"
 	}]

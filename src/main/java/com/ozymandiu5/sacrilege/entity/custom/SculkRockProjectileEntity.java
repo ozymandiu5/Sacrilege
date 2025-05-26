@@ -36,7 +36,7 @@ public class SculkRockProjectileEntity extends ThrowableItemProjectile {
 
 	private ParticleOptions getParticle() {
 		ItemStack itemstack = this.getItemRaw();
-		return (ParticleOptions) (itemstack.isEmpty() ? ParticleTypes.ITEM : new ItemParticleOption(ParticleTypes.ITEM, itemstack));
+		return (ParticleOptions) (itemstack.isEmpty() ? new ItemParticleOption(ParticleTypes.ITEM, ItemInit.SCULK_ROCK.get().getDefaultInstance()) : new ItemParticleOption(ParticleTypes.ITEM, itemstack));
 	}
 
 	public void handleEntityEvent(byte p_37402_) {
@@ -44,7 +44,10 @@ public class SculkRockProjectileEntity extends ThrowableItemProjectile {
 			ParticleOptions particleoptions = this.getParticle();
 
 			for (int i = 0; i < 8; ++i) {
-				this.level().addParticle(particleoptions, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
+				double dx = (2 * Math.random() - 1) * 0.2;
+				double dy = (2 * Math.random() - 1) * 0.2;
+				double dz = (2 * Math.random() - 1) * 0.2;
+				this.level().addParticle(particleoptions, this.getX(), this.getY(), this.getZ(), dx, dy, dz);
 			}
 		}
 	}
