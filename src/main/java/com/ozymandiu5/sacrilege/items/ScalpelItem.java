@@ -22,15 +22,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LayeredCauldronBlock;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ScalpelItem extends Item {
 
 	public ScalpelItem(Properties properties) {
 		super(properties);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static boolean isUsed(ItemStack stack) {
@@ -102,11 +98,6 @@ public class ScalpelItem extends Item {
 		ItemStack blood = new ItemStack(ItemInit.BLOOD_BOTTLE.get());
 		BloodBottleItem.setPlayerUUID(blood, player.getUUID());
 		player.addItem(blood);
-	}
-
-	@SubscribeEvent
-	public void onInteractBlock(PlayerInteractEvent.RightClickBlock event) {
-		
 	}
 
 	protected void clean(Level world, Player player, InteractionHand hand, BlockPos pos) {
