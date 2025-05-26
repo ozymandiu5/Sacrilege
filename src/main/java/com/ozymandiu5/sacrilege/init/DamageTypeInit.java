@@ -9,8 +9,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageType;
 
 public interface DamageTypeInit {
-	ResourceKey<DamageType> BLOOD_LOSS = ResourceKey.create(Registries.DAMAGE_TYPE, 
+	ResourceKey<DamageType> BLOOD_LOSS = ResourceKey.create(Registries.DAMAGE_TYPE,
 			new ResourceLocation(Sacrilege.MODID, "blood_loss"));
 
-	public static void bootstrap(BootstapContext<DamageType> context) { context.register(BLOOD_LOSS, new DamageType("blood_loss", 0.1F)); }
+	public static void bootstrap(BootstapContext<DamageType> context) {
+		context.register(BLOOD_LOSS, new DamageType("blood_loss", 0.1F));
+	}
 }

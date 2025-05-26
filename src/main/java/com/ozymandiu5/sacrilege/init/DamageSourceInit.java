@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 public class DamageSourceInit {
 	private final Registry<DamageType> damageTypes;
 	
-	private final DamageSource blood_loss;
+	public final DamageSource blood_loss;
 	
 	public DamageSourceInit(RegistryAccess pRegistry) {
 		this.damageTypes = pRegistry.registryOrThrow(Registries.DAMAGE_TYPE);
@@ -24,15 +24,13 @@ public class DamageSourceInit {
         return new DamageSource(this.damageTypes.getHolderOrThrow(pDamageTypeKey));
     }
 
-    private DamageSource source(ResourceKey<DamageType> pDamageTypeKey, @Nullable Entity pEntity) {
+    @SuppressWarnings("unused")
+	private DamageSource source(ResourceKey<DamageType> pDamageTypeKey, @Nullable Entity pEntity) {
         return new DamageSource(this.damageTypes.getHolderOrThrow(pDamageTypeKey), pEntity);
     }
 
+    @SuppressWarnings("unused")
     private DamageSource source(ResourceKey<DamageType> pDamageTypeKey, @Nullable Entity pCausingEntity, @Nullable Entity pDirectEntity) {
         return new DamageSource(this.damageTypes.getHolderOrThrow(pDamageTypeKey), pCausingEntity, pDirectEntity);
-    }
-    
-    public DamageSource bloodLoss() {
-    	return this.blood_loss;
     }
 }

@@ -7,16 +7,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class BloodBottleItem extends Item {
-		
+
 	public BloodBottleItem(Properties properties) {
 		super(properties);
 	}
-	
+
 	public static UUID getPlayerUUID(ItemStack stack) {
 		CompoundTag nbt = stack.getOrCreateTag();
-		try{
+		try {
 			return nbt.getUUID("BloodUUID");
-		} catch(IllegalArgumentException err) {
+		} catch (IllegalArgumentException err) {
 			return null;
 		}
 	}

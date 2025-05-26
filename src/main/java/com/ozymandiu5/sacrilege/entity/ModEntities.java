@@ -12,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModEntities {
 	public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
 			DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Sacrilege.MODID);
+	
 	public static final RegistryObject<EntityType<SculkRockProjectileEntity>> SCULK_ROCK_PROJECTILE =
 			ENTITY_TYPES.register("sculk_rock_projectile", () -> EntityType.Builder.<SculkRockProjectileEntity>of(SculkRockProjectileEntity::new, MobCategory.MISC)
 					.sized(0.5f, 0.5f).build("sculk_rock_projectile"));

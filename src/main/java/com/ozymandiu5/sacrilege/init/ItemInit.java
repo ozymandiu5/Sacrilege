@@ -87,6 +87,5 @@ public class ItemInit {
 			-> new ArmorItem(ModArmorMaterials.SCULK_COVERED_IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<Item> SCULK_COVERED_IRON_LEGGINGS = ITEMS.register("sculk_covered_iron_leggings", () 
 			-> new ArmorItem(ModArmorMaterials.SCULK_COVERED_IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-	public static final RegistryObject<Item> SCULK_COVERED_IRON_BOOTS = ITEMS.register("sculk_covered_iron_boots", () 
-			-> new ArmorItem(ModArmorMaterials.SCULK_COVERED_IRON, ArmorItem.Type.BOOTS, new Item.Properties()));
+			public static final RegistryObject<Item> SCULK_COVERED_IRON_BOOTS = ITEMS.register("sculk_covered_iron_boots", () -> new ArmorItem(ModArmorMaterials.SCULK_COVERED_IRON, ArmorItem.Type.BOOTS, new Item.Properties()));
 }

@@ -16,7 +16,7 @@ public class ModToolTiers {
 			new ForgeTier(5, 7250, 15f, 4.5f, 30,
 					ModTags.Blocks.NEEDS_WHISPERING_STEEL_TOOL, () -> Ingredient.of(ItemInit.WHISPERING_STEEL.get())),
 			new ResourceLocation(Sacrilege.MODID, "whispering_steel"), List.of(Tiers.NETHERITE), List.of());
-	
+
 	public static final Tier SCULK_COVERED_IRON = TierSortingRegistry.registerTier(
 			new ForgeTier(0, 64, 12.0F, 0.0F, 25,
 					ModTags.Blocks.NEEDS_SCULK_COVERED_IRON_TOOL, () -> Ingredient.of(Items.IRON_INGOT)),
