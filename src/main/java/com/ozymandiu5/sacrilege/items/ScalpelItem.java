@@ -6,6 +6,7 @@ import com.ozymandiu5.sacrilege.init.ItemInit;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -25,24 +26,23 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ScalpelItem extends Item {
 
-	public static final String TAG_USED = "Used";
-
 	public ScalpelItem(Properties properties) {
 		super(properties);
-		MinecraftForge.EVENT_BUS.register(this);
-		ItemProperties.register(this, new ResourceLocation(Sacrilege.MODID, "is_used"),
-				(stack, world, player, seed) -> isUsed(stack) ? 1 : 0);
 	}
 
 	public static boolean isUsed(ItemStack stack) {
-		if (stack.hasTag()) {
-			return stack.getTag().getBoolean(TAG_USED);
+		CompoundTag nbt = stack.getOrCreateTag();
+		try{
+			return nbt.getBoolean("is_used");
+		} catch(IllegalArgumentException err) {
+			err.printStackTrace();			
+			return false;
 		}
-		return false;
 	}
 
 	public static void setUsed(ItemStack stack, boolean isUsed) {
-		stack.getOrCreateTag().putBoolean(TAG_USED, isUsed);
+		CompoundTag nbt = stack.getOrCreateTag();
+		nbt.putBoolean("is_used", isUsed);
 	}
 
 	@Override

@@ -401,7 +401,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "sacrilege:sculk_covered_rock",
+          "name": "sacrilege:sculk_rock",
           "functions": [
             {
               "function": "minecraft:set_count",

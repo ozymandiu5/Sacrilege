@@ -32,24 +32,22 @@ import net.minecraft.resources.ResourceLocation;
 
 public class AltarItem extends Item {
 	
-	   public static final String TAG_ALTARTYPE = "altarType";
-
 	   public AltarItem(Item.Properties properties) {
 		   	super(properties);
-			MinecraftForge.EVENT_BUS.register(this);
-			ItemProperties.register(this, new ResourceLocation(Sacrilege.MODID, "altar_type"),
-					(stack, world, player, seed) -> getAltarType(stack));
 	   }
 	   
 		public static int getAltarType(ItemStack stack) {
-			if (stack.hasTag()) {
-				return stack.getTag().getInt(TAG_ALTARTYPE);
+			CompoundTag nbt = stack.getOrCreateTag();
+			try{
+				return (int)nbt.getFloat("altar_type");
+			} catch(IllegalArgumentException err) {
+				return 0;
 			}
-			return 0;
 		}
 
 		public static void setAltarType(ItemStack stack, int altarType) {
-			stack.getOrCreateTag().putInt(TAG_ALTARTYPE, altarType);
+			CompoundTag nbt = stack.getOrCreateTag();
+			nbt.putFloat("altar_type", altarType);
 		}
 		
 	   public InteractionResult useOn(UseOnContext p_40510_) {

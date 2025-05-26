@@ -37,7 +37,6 @@ public class Sacrilege {
 	private void commonSetup(final FMLCommonSetupEvent event) {
 		LOGGER.info("Sacrilege setting up...");
 		LOGGER.info("There is no going back.");
-		LOGGER.info("have fun " + Minecraft.getInstance().getUser().getName() + "!! :3");
 	}
 
 	@SubscribeEvent
@@ -50,6 +49,7 @@ public class Sacrilege {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
 			EntityRenderers.register(ModEntities.SCULK_ROCK_PROJECTILE.get(), ThrownItemRenderer::new);
+			LOGGER.info("have fun " + Minecraft.getInstance().getUser().getName() + "!! :3");
 		}
 	}
 }

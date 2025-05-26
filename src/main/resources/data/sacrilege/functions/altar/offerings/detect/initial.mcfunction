@@ -10,11 +10,12 @@ execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Nam
 execute if data entity @s {item:{tag:{display:{Name:'{"text":"sweeping"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add sweeping
 execute if data entity @s {item:{id:"sacrilege:altar"}} run tag @e[tag=altar,limit=1,sort=nearest] add fartar
 execute if data entity @s {item:{id:"sacrilege:blood_bottle"}} as @e[tag=altar,limit=1,sort=nearest] run function sacrilege:altar/offerings/cults/detect
-execute as @p if predicate sacrilege:offerings/sculk/repulsive as @e[tag=altar,limit=1,sort=nearest] unless predicate sacrilege:offerings/checkdevtags run tag @s add repulsive
-execute as @p if predicate sacrilege:offerings/sculk/undesirable as @e[tag=altar,limit=1,sort=nearest] unless predicate sacrilege:offerings/checkdevtags run tag @s add undesirable
-execute as @p if predicate sacrilege:offerings/sculk/mediocre as @e[tag=altar,limit=1,sort=nearest] unless predicate sacrilege:offerings/checkdevtags run tag @s add mediocre
-execute as @p if predicate sacrilege:offerings/sculk/prodigious as @e[tag=altar,limit=1,sort=nearest] unless predicate sacrilege:offerings/checkdevtags run tag @s add prodigious
-execute as @p if predicate sacrilege:offerings/sculk/consummate as @e[tag=altar,limit=1,sort=nearest] unless predicate sacrilege:offerings/checkdevtags run tag @s add consummate
+
+execute as @e[tag=altar,limit=1,sort=nearest] if entity @s[tag=sculk] unless predicate sacrilege:offerings/checkdevtags as @p if predicate sacrilege:offerings/sculk/repulsive run tag @e[tag=altar,limit=1,sort=nearest] add repulsive
+execute as @e[tag=altar,limit=1,sort=nearest] if entity @s[tag=sculk] unless predicate sacrilege:offerings/checkdevtags as @p if predicate sacrilege:offerings/sculk/undesirable run tag @e[tag=altar,limit=1,sort=nearest] add undesirable
+execute as @e[tag=altar,limit=1,sort=nearest] if entity @s[tag=sculk] unless predicate sacrilege:offerings/checkdevtags as @p if predicate sacrilege:offerings/sculk/mediocre run tag @e[tag=altar,limit=1,sort=nearest] add mediocre
+execute as @e[tag=altar,limit=1,sort=nearest] if entity @s[tag=sculk] unless predicate sacrilege:offerings/checkdevtags as @p if predicate sacrilege:offerings/sculk/prodigious run tag @e[tag=altar,limit=1,sort=nearest] add prodigious
+execute as @e[tag=altar,limit=1,sort=nearest] if entity @s[tag=sculk] unless predicate sacrilege:offerings/checkdevtags as @p if predicate sacrilege:offerings/sculk/consummate run tag @e[tag=altar,limit=1,sort=nearest] add consummate
 
 item replace entity @p weapon.mainhand with minecraft:air
 particle minecraft:sonic_boom ~ ~1 ~ 0 0 0 0 1
