@@ -1,11 +1,7 @@
 package com.ozymandiu5.sacrilege.init;
 
 import com.ozymandiu5.sacrilege.Sacrilege;
-import com.ozymandiu5.sacrilege.items.BloodBottleItem;
-import com.ozymandiu5.sacrilege.items.ScalpelItem;
-import com.ozymandiu5.sacrilege.items.SculkRockItem;
-import com.ozymandiu5.sacrilege.items.AltarItem;
-import com.ozymandiu5.sacrilege.items.RiftcallerItem;
+import com.ozymandiu5.sacrilege.items.*;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -62,13 +58,13 @@ public class ItemInit {
 					.rarity(Rarity.EPIC)));
 	
 	public static final RegistryObject<Item> WHISPERING_STEEL_HELMET = ITEMS.register("whispering_steel_helmet", () 
-			-> new ArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.HELMET, new Item.Properties()));
+			-> new ModArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.HELMET, new Item.Properties()));
 	public static final RegistryObject<Item> WHISPERING_STEEL_CHESTPLATE = ITEMS.register("whispering_steel_chestplate", () 
-			-> new ArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+			-> new ModArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<Item> WHISPERING_STEEL_LEGGINGS = ITEMS.register("whispering_steel_leggings", () 
-			-> new ArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+			-> new ModArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<Item> WHISPERING_STEEL_BOOTS = ITEMS.register("whispering_steel_boots", () 
-			-> new ArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
+			-> new ModArmorItem(ModArmorMaterials.WHISPERING_STEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	public static final RegistryObject<Item> SCULK_COVERED_IRON_SWORD = ITEMS.register("sculk_covered_iron_sword", () 
 			-> new SwordItem(ModToolTiers.SCULK_COVERED_IRON, 4, -2, new Item.Properties()));

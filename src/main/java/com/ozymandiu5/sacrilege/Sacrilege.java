@@ -1,5 +1,7 @@
 package com.ozymandiu5.sacrilege;
 
+import com.ozymandiu5.sacrilege.effect.ModEffects;
+import com.ozymandiu5.sacrilege.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,6 +38,9 @@ public class Sacrilege {
 		MinecraftForge.EVENT_BUS.register(this);
 		ItemInit.ITEMS.register(modEventBus);
 		ModEntities.ENTITY_TYPES.register(modEventBus);
+
+		ModSounds.register(modEventBus);
+		ModEffects.register(modEventBus);
 	}
 
 	private void commonSetup(final FMLCommonSetupEvent event) {

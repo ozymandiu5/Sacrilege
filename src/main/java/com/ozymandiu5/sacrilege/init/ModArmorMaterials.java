@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.ozymandiu5.sacrilege.Sacrilege;
 
+import com.ozymandiu5.sacrilege.sound.ModSounds;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem.Type;
@@ -13,7 +14,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-	WHISPERING_STEEL("whispering_steel", 40, new int[] { 5, 7, 5, 4 }, 30, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.of(ItemInit.WHISPERING_STEEL.get())),
+	WHISPERING_STEEL("whispering_steel", 720, new int[] { 6, 12, 8, 4 }, 30, ModSounds.EQUIP_WHISPERING_STEEL.get(), 2f, 0.2f, () -> Ingredient.of(ItemInit.WHISPERING_STEEL.get())),
 
 	SCULK_COVERED_IRON("sculk_covered_iron", 8, new int[] { 2, 6, 3, 2 }, 25, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(Items.IRON_INGOT));
 
@@ -26,7 +27,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 	private final float knockbackResistance;
 	private final Supplier<Ingredient> repairIngredient;
 
-	private static final int[] BASE_DURABILITY = { 11, 16, 16, 13 };
+	private static final int[] BASE_DURABILITY = { 10, 10, 10, 10 };
 
 	ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
 		this.name = name;

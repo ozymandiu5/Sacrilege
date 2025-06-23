@@ -24,11 +24,18 @@
 	"item.sacrilege.sculk_covered_iron_boots": "Sculk Covered Iron Boots",
 	"item.sacrilege.riftcaller": "The Riftcaller",
 	"item.sacrilege.altar": "Altar",
+
 	"death.attack.blood_loss": "%1$s lost too much blood",
+
 	"subtitles.howdoiproveit": "HOW DO I PROVE IT!!! GHRAHHHH",
     "subtitles.devs.0zymandiu5": "0zymandiu5 cries for help",
     "subtitles.devs.existingeevee": "ExistingEevee cries for help",
     "subtitles.devs.sweebow": "Sweebow cries for help",
-    "subtitles.devs.termineitron": "Termineitron cries for help",
-    "subtitles.devs.modrome": "Modrome cries for help"
+    "subtitles.devs.lightigivhi": "Lightigivhi cries for help",
+    "subtitles.devs.21fishbowls": "21fishbowls cries for help",
+    "subtitles.devs.danieloxxelo": "DanieloXXelo cries for help",
+    "subtitles.devs.modrome": "Modrome cries for help",
+	"subtitles.item.armor.equip_whispering_steel": "Whispering Steel echoes",
+
+	"effect.sacrilege.echoing": "Echoing"
 }

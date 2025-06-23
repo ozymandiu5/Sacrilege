@@ -23,16 +23,37 @@
         ],
         "subtitle": "subtitles.devs.sweebow"
     },
-    "devs.termineitron": {
+    "devs.lightigivhi": {
         "sounds": [
-            "sacrilege:devs/termineitron"
+            "sacrilege:devs/lightigivhi"
         ],
-        "subtitle": "subtitles.devs.termineitron"
+        "subtitle": "subtitles.devs.lightigivhi"
     },
     "devs.modrome": {
         "sounds": [
             "sacrilege:devs/modrome"
         ],
         "subtitle": "subtitles.devs.modrome"
+    },
+    "devs.21fishbowls": {
+        "sounds": [
+            "sacrilege:devs/21fishbowls"
+        ],
+        "subtitle": "subtitles.devs.21fishbowls"
+    },
+    "devs.danieloxxelo": {
+        "sounds": [
+            "sacrilege:devs/danieloxxelo"
+        ],
+        "subtitle": "subtitles.devs.danieloxxelo"
+    },
+    "item.armor.equip_whispering_steel": {
+        "sounds": [
+            "sacrilege:item/armor/equip_whispering_steel1",
+            "sacrilege:item/armor/equip_whispering_steel2",
+            "sacrilege:item/armor/equip_whispering_steel3",
+            "sacrilege:item/armor/equip_whispering_steel4"
+        ],
+        "subtitle": "subtitles.item.armor.equip_whispering_steel"
     }
 }

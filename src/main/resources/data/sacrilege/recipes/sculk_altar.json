@@ -26,7 +26,8 @@
     }
   },
   "result": {
-    "item": "minecraft:knowledge_book",
-	"count": 1
+    "item": "sacrilege:altar",
+	"count": 1,
+    "nbt": {"altar_type": 1}
   }
 }

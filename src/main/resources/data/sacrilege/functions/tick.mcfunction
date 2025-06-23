@@ -28,5 +28,5 @@ execute as @e[tag=altar] if score @s sacri.altarUnbindingTimer matches 0 run sco
 execute as @e[tag=reality] at @s if score @s sacri.altarLivingTimer matches 1.. run function sacrilege:main/realitytick
 execute as @e[tag=reality] at @s if score @s sacri.altarLivingTimer matches 0 run function sacrilege:main/realitycrystalize
 
-execute as @e[type=minecraft:armor_stand,tag=!altar] if data entity @s {ArmorItems:[{id:"sacrilege:altar",tag:{altarType:1}}]} run tag @s add sculk
+execute as @e[type=minecraft:armor_stand,tag=!altar] if data entity @s {ArmorItems:[{id:"sacrilege:altar",tag:{altar_type:1}}]} run tag @s add sculk
 execute as @e[type=minecraft:armor_stand,tag=!altar] if data entity @s {ArmorItems:[{id:"sacrilege:altar"}]} run tag @s add altar

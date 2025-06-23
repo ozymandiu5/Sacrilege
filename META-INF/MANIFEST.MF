@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: sacrilege
+Specification-Vendor: ozymandius
+Specification-Version: 1
+Implementation-Title: Sacrilege
+Implementation-Version: 0.1.1
+Implementation-Vendor: ozymandius
+Implementation-Timestamp: 2025-05-26T08:18:26-0400
+

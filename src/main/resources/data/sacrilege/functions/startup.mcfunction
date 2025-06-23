@@ -12,7 +12,7 @@ scoreboard objectives add sacri.altarLivingTimer dummy
 scoreboard objectives add sacri.altarCultAdd dummy
 
 scoreboard objectives add sacri.configs dummy
-scoreboard players set riftcallerObtained sacri.configs 0
+execute unless score riftcallerObtained sacri.configs matches 1 run scoreboard players set riftcallerObtained sacri.configs 0
 
 function sacrilege:main/1sectimer
 

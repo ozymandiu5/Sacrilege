@@ -4,7 +4,7 @@ execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Nam
 execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"ExistingEevee"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add ExistingEevee
 execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"Sweebow"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add Sweebow
 execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"Lightigivhi"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add Lightigivhi
-# execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"Termineitron"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add Termineitron
+execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"21fishbowls"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add 21fishbowls
 execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"DanieloXXelo"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add DanieloXXelo
 execute if data entity @s {item:{id:"minecraft:skeleton_skull",tag:{display:{Name:'{"text":"Modrome"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add Modrome
 execute if data entity @s {item:{tag:{display:{Name:'{"text":"sweeping"}'}}}} run tag @e[tag=altar,limit=1,sort=nearest] add sweeping
