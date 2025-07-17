@@ -25,6 +25,11 @@
 	"item.sacrilege.riftcaller": "The Riftcaller",
 	"item.sacrilege.altar": "Altar",
 
+	"block.sacrilege.nullstone": "Nullstone",
+	"block.sacrilege.cobbled_nullstone": "Cobbled Nullstone",
+	"block.sacrilege.obscured_nullstone": "Obscured Nullstone",
+	"block.sacrilege.cobbled_obscured_nullstone": "Cobbled Obscured Nullstone",
+
 	"death.attack.blood_loss": "%1$s lost too much blood",
 
 	"subtitles.howdoiproveit": "HOW DO I PROVE IT!!! GHRAHHHH",
@@ -37,5 +42,5 @@
     "subtitles.devs.modrome": "Modrome cries for help",
 	"subtitles.item.armor.equip_whispering_steel": "Whispering Steel echoes",
 
-	"effect.sacrilege.echoing": "Echoing"
+	"effect.sacrilege.silencing": "Silencing"
 }

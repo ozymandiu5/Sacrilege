@@ -55,5 +55,57 @@
             "sacrilege:item/armor/equip_whispering_steel4"
         ],
         "subtitle": "subtitles.item.armor.equip_whispering_steel"
-    }
+    },
+	"block.obscured_nullstone.break": {
+		"sounds": [
+			"sacrilege:block/obscured_nullstone/break1",
+			"sacrilege:block/obscured_nullstone/break2",
+			"sacrilege:block/obscured_nullstone/break3",
+			"sacrilege:block/obscured_nullstone/break4"
+		],
+		"subtitle": "subtitles.block.generic.break"
+	},
+	"block.obscured_nullstone.fall": {
+		"sounds": [
+			"sacrilege:block/obscured_nullstone/step1",
+			"sacrilege:block/obscured_nullstone/step2",
+			"sacrilege:block/obscured_nullstone/step3",
+			"sacrilege:block/obscured_nullstone/step4",
+			"sacrilege:block/obscured_nullstone/step5",
+			"sacrilege:block/obscured_nullstone/step6"
+		]
+	},
+	"block.obscured_nullstone.hit": {
+		"sounds": [
+			"sacrilege:block/obscured_nullstone/step1",
+			"sacrilege:block/obscured_nullstone/step2",
+			"sacrilege:block/obscured_nullstone/step3",
+			"sacrilege:block/obscured_nullstone/step4",
+			"sacrilege:block/obscured_nullstone/step5",
+			"sacrilege:block/obscured_nullstone/step6"
+		],
+		"subtitle": "subtitles.block.generic.hit"
+	},
+	"block.obscured_nullstone.place": {
+		"sounds": [
+			"sacrilege:block/obscured_nullstone/place1",
+			"sacrilege:block/obscured_nullstone/place2",
+			"sacrilege:block/obscured_nullstone/place3",
+			"sacrilege:block/obscured_nullstone/place4",
+			"sacrilege:block/obscured_nullstone/place5",
+			"sacrilege:block/obscured_nullstone/place6"
+		],
+		"subtitle": "subtitles.block.generic.place"
+	},
+	"block.obscured_nullstone.step": {
+		"sounds": [
+			"sacrilege:block/obscured_nullstone/step1",
+			"sacrilege:block/obscured_nullstone/step2",
+			"sacrilege:block/obscured_nullstone/step3",
+			"sacrilege:block/obscured_nullstone/step4",
+			"sacrilege:block/obscured_nullstone/step5",
+			"sacrilege:block/obscured_nullstone/step6"
+		],
+		"subtitle": "subtitles.block.generic.footsteps"
+	}
 }

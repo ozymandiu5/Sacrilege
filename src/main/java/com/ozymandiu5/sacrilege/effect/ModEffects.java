@@ -12,8 +12,8 @@ public class ModEffects {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS =
             DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Sacrilege.MODID);
 
-    public static final RegistryObject<MobEffect> ECHOING = MOB_EFFECTS.register("echoing",
-            () -> new EchoingEffect(MobEffectCategory.BENEFICIAL, 876888));
+    public static final RegistryObject<MobEffect> SILENCING = MOB_EFFECTS.register("silencing",
+            () -> new SilencingEffect(MobEffectCategory.BENEFICIAL, 876888));
 
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);

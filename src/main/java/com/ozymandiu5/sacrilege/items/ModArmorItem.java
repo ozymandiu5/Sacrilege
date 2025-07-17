@@ -15,7 +15,7 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.WHISPERING_STEEL, new MobEffectInstance(ModEffects.ECHOING.get(), 200, 0,
+                    .put(ModArmorMaterials.WHISPERING_STEEL, new MobEffectInstance(ModEffects.SILENCING.get(), 200, 0,
                             false,false, true)).build();
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
